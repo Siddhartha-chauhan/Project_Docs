@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Stories</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 40px 20px;
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        h1 {
+            text-align: center;
+            color: white;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+        
+        .subtitle {
+            text-align: center;
+            color: rgba(255,255,255,0.9);
+            font-size: 1.2em;
+            margin-bottom: 50px;
+        }
+        
+        .role-section {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+        
+        .role-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 3px solid #f0f0f0;
+        }
+        
+        .role-icon {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 35px;
+            margin-right: 20px;
+            flex-shrink: 0;
+        }
+        
+        .primary-user .role-icon {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        
+        .baker .role-icon {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+        }
+        
+        .admin .role-icon {
+            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+        }
+        
+        .role-title h2 {
+            color: #2d3748;
+            font-size: 1.8em;
+            margin-bottom: 5px;
+        }
+        
+        .role-title p {
+            color: #718096;
+            font-size: 1.1em;
+        }
+        
+        .story-card {
+            background: #f7fafc;
+            border-radius: 12px;
+            padding: 20px 25px;
+            margin-bottom: 15px;
+            border-left: 4px solid #667eea;
+            transition: all 0.3s ease;
+        }
+        
+        .story-card:hover {
+            transform: translateX(5px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        
+        .baker .story-card {
+            border-left-color: #f5576c;
+        }
+        
+        .admin .story-card {
+            border-left-color: #00f2fe;
+        }
+        
+        .story-text {
+            color: #2d3748;
+            font-size: 1.05em;
+            line-height: 1.6;
+        }
+        
+        .story-text strong {
+            color: #667eea;
+            font-weight: 600;
+        }
+        
+        .baker .story-text strong {
+            color: #f5576c;
+        }
+        
+        .admin .story-text strong {
+            color: #00a8cc;
+        }
+        
+        .story-count {
+            display: inline-block;
+            background: #667eea;
+            color: white;
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 28px;
+            font-size: 0.9em;
+            font-weight: 600;
+            margin-right: 12px;
+        }
+        
+        .baker .story-count {
+            background: #f5576c;
+        }
+        
+        .admin .story-count {
+            background: #00a8cc;
+        }
+        
+        .optional-badge {
+            display: inline-block;
+            background: #ffd93d;
+            color: #2d3748;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.85em;
+            font-weight: 600;
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>📖 User Stories</h1>
+        <p class="subtitle">Defining platform functionality from user perspective</p>
+        
+        <!-- Primary User Stories -->
+        <div class="role-section primary-user">
+            <div class="role-header">
+                <div class="role-icon">🍰</div>
+                <div class="role-title">
+                    <h2>Siddhartha - Regular User</h2>
+                    <p>Primary User Stories</p>
+                </div>
+            </div>
+            
+            <div class="story-card">
+                <span class="story-count">1</span>
+                <span class="story-text">As a <strong>user</strong>, I want to <strong>sign up and log in easily</strong>, so I can <strong>access the platform</strong>.</span>
+            </div>
+            
+            <div class="story-card">
+                <span class="story-count">2</span>
+                <span class="story-text">As a <strong>user</strong>, I want to <strong>view a list of cakes with images and basic details</strong>, so I can <strong>explore options</strong>.</span>
+            </div>
+            
+            <div class="story-card">
+                <span class="story-count">3</span>
+                <span class="story-text">As a <strong>user</strong>, I want to <strong>open a cake detail page</strong>, so I can <strong>read full description and reviews</strong>.</span>
+            </div>
+            
+            <div class="story-card">
+                <span class="story-count">4</span>
+                <span class="story-text">As a <strong>user</strong>, I want to <strong>write a review</strong>, so I can <strong>share my experience</strong>.</span>
+            </div>
+            
+            <div class="story-card">
+                <span class="story-count">5</span>
+                <span class="story-text">As a <strong>user</strong>, I want to <strong>rate a cake</strong>, so <strong>others can quickly understand its quality</strong>.</span>
+            </div>
+            
+            <div class="story-card">
+                <span class="story-count">6</span>
+                <span class="story-text">As a <strong>user</strong>, I want to <strong>like/unlike a cake</strong>, so I can <strong>show my appreciation</strong>.</span>
+            </div>
+            
+            <div class="story-card">
+                <span class="story-count">7</span>
+                <span class="story-text">As a <strong>user</strong>, I want to <strong>search cakes</strong>, so I can <strong>quickly find specific cakes</strong>.</span>
+            </div>
+            
+            <div class="story-card">
+                <span class="story-count">8</span>
+                <span class="story-text">As a <strong>user</strong>, I want to <strong>view top rated / most liked cakes</strong>, so I can <strong>easily pick the best options</strong>.</span>
+            </div>
+        </div>
+        
+        <!-- Baker Stories -->
+        <div class="role-section baker">
+            <div class="role-header">
+                <div class="role-icon">👨‍🍳</div>
+                <div class="role-title">
+                    <h2>Baker / Cake Shop Owner</h2>
+                    <p>Business User Stories (If Implemented)</p>
+                </div>
+            </div>
+            
+            <div class="story-card">
+                <span class="story-count">1</span>
+                <span class="story-text">As a <strong>baker</strong>, I want to <strong>add cakes with images and descriptions</strong>, so <strong>users can see my products</strong>.</span>
+            </div>
+            
+            <div class="story-card">
+                <span class="story-count">2</span>
+                <span class="story-text">As a <strong>baker</strong>, I want to <strong>view reviews on my cakes</strong>, so I can <strong>understand user feedback</strong>.</span>
+            </div>
+        </div>
+        
+        <!-- Admin Stories -->
+        <div class="role-section admin">
+            <div class="role-header">
+                <div class="role-icon">⚙️</div>
+                <div class="role-title">
+                    <h2>Platform Administrator</h2>
+                    <p>Admin User Stories</p>
+                </div>
+            </div>
+            
+            <div class="story-card">
+                <span class="story-count">1</span>
+                <span class="story-text">As an <strong>admin</strong>, I want to <strong>manage cakes</strong>, so I can <strong>control the content on the platform</strong>.</span>
+            </div>
+            
+            <div class="story-card">
+                <span class="story-count">2</span>
+                <span class="story-text">As an <strong>admin</strong>, I want to <strong>manage user reviews</strong>, so I can <strong>remove inappropriate content</strong>.</span>
+            </div>
+            
+            <div class="story-card">
+                <span class="story-count">3</span>
+                <span class="story-text">As an <strong>admin</strong>, I want to <strong>monitor platform activity</strong>, so I can <strong>maintain quality and trust</strong>.</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
